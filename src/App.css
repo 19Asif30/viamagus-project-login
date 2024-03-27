@@ -1,38 +1,227 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  input {
+    border: none;
+    border-bottom: 2px solid rgba(64, 185, 64, 0.911);
   }
-  to {
-    transform: rotate(360deg);
+  
+  input:focus {
+    border: none;
+    border-bottom: 2px solid rgb(38, 172, 38);
+    outline: none;
+  
   }
-}
+  
+  label {
+    color: rgb(38, 172, 38);
+    font-size: 1.3rem;
+  }
+  
+  .image-background {
+    position: relative;
+  }
+  
+  .login-form-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login-form-parent {
+    border-radius: 5px;
+    position: absolute;
+    width: 600px;
+    z-index: 1;
+    top: 7rem;
+    background-color: white;
+  }
+  
+  .login-form-header {
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 5px 0px rgba(87, 87, 87, 0.75);
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(87, 87, 87, 0.75);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(87, 87, 87, 0.75);
+  }
+  
+  .login-form-header img {
+    width: 8rem;
+  }
+  
+  .invalid-feedback {
+    color: red;
+  }
+  
+  .form-control {
+    border-radius: 2px;
+    font-size: 1rem;
+  }
+  
+  .is-invalid {
+    /* outline: 1px solid red; */
+    border-bottom: 1px solid red;
+  }
+  
+  .login-inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .tree-img {
+    width: 450px;
+  }
+  
+  .login-title {
+    font-size: 2rem;
+    color: rgb(18, 180, 18);
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .form-control {
+    width: 100%;
+  }
+  
+  .inputbox {
+    padding: 0px;
+    margin: 0px;
+    width: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .or{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+  
+  .sign-btn{
+    width: 100%;
+    border-radius: 20px;
+    padding: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 1.2rem;
+    background-color: rgb(32, 219, 32);
+    border: none;
+    color: white;
+  }
+  
+  .sign-btn:hover{
+    cursor: pointer;
+    background-color: rgb(33, 165, 33);
+  }
+  
+  .forgot-signup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .forgot-password{
+    font-weight:600;
+  }
+  
+  .sign-up{
+    color: rgb(173, 25, 62);
+    font-weight:600;
+  }
+  
+  .forgot-password:hover, .sign-up:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  
+  .google-sign-in-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #4285f4; 
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    border: none;
+    
+  }
+  
+  .google-sign-in-button:hover {
+    background-color: #3367d6; 
+    cursor: pointer;
+  }
+  
+  .google-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff; 
+    width: 2.25rem; 
+    height: 2.25rem; 
+    border-radius: 0.25rem 0 0 0.25rem;
+  }
+  
+  .google-logo {
+    width: 1.25rem; 
+    height: 1.25rem; 
+  }
+  
+  .button-text {
+    width: 100%;
+    font-size: 0.875rem;
+    color: #ffffff; 
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  } 
+  
+  .button-text p{
+    text-align: center;
+  }
+  
+  .fill-google-logo-blue {
+    fill: #4285f4; 
+  }
+  
+  .fill-google-logo-green {
+    fill: #34a853; 
+  }
+  
+  .fill-google-logo-yellow {
+    fill: #fbbc05; 
+  }
+  
+  .fill-google-logo-red {
+    fill: #ea4335; 
+  }
+  
+  
+  @media screen and (max-width: 650px) {
+    .login-form-parent {
+      width: 95%;
+    }
+  
+    .inputbox {
+      width: 95%;
+    }
+  
+    .tree-img {
+      width: 95% !important;
+  
+    }
+  }
+
+  
